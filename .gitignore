@@ -65,7 +65,7 @@ node_modules/
 # dotenv environment variables file
 .env
 
-#.DS_Store
+#Things to ignore
 .DS_Store
-./prod/*
-./debug/*
+prod/*
+debug/*

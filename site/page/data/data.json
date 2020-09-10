@@ -297,8 +297,8 @@
     "tel": "080-9999-9999",
     "name": "Simple Sitegen",
     "address": "Tokyo, Japan",
-    "signature": "Simple Sitegen Project",
-    "ghlink": "/",
+    "signature": "code: Apache 2.0 | creative: unsplash.com",
+    "ghlink": "https://github.com/uskay/simple-sitegen",
     "carousel": {
       "items": [
         {
