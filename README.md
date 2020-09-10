@@ -61,6 +61,8 @@ const modern = {
         edge: 12,
       };
 ```
+## Caveats
+Many, for example, the site has 100 in LH acceciblity but in reality it doesn't mean it's, such as alt values, are actually useful.
 
 ## Licence
 Codes are Apache 2.0 and the creatives are from [unsplash.com](https://unsplash.com). Thank you so much
