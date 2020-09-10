@@ -27,7 +27,7 @@ Looking nice ⚡
 ![lighthouse score](https://cdn.glitch.com/98449704-33d8-49b2-88f2-aa6d2aeba5d3%2Flh.png?v=1599698926820)
 
 ## Components
-It was not easy, with my skills, to build a library to handle the DOM model and its tree strucutres, the site uses [htm](https://github.com/developit/htm). Htm was great in the way that it works with just using the plain ES6 syntax; [template literals](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Template_literals). 
+As it was not easy, with my skills, to build a library to handle the DOM model and its tree strucutres, the site uses [htm](https://github.com/developit/htm). Htm was great in the way that it works with just using the plain ES6 syntax; [template literals](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Template_literals). 
 
 Most of the components are currenly placed under `/site/component/`, all extending `simple-ui.js` which has a (very rough) feature of making a single file comonent (having HTMl, CSS and JavaScript all in a single file). 
 
