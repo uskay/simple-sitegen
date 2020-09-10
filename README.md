@@ -61,6 +61,10 @@ const modern = {
         edge: 12,
       };
 ```
+
+## Data
+All the data are currently under `/site/page/data/` and markdowns are all under `/site/page/md/`.
+
 ## Caveats
 Many, for example, the site has 100 in LH acceciblity but in reality it doesn't mean it's, such as alt values, are actually useful.
 
