@@ -23,6 +23,7 @@ ha 😉
 
 ## Performance
 Looking nice ⚡
+
 ![lighthouse score](https://cdn.glitch.com/98449704-33d8-49b2-88f2-aa6d2aeba5d3%2Flh.png?v=1599698926820)
 
 ## Components
@@ -45,19 +46,20 @@ The build processes are all under `/build/`, still very buggy, but tried to add 
 
 ## PWA - Install flow
 Will not show the default install banner but added the install button nice and simply in the side bar.
+
 ![install button](https://cdn.glitch.com/98449704-33d8-49b2-88f2-aa6d2aeba5d3%2Fah.png?v=1599700699662)
 
 ## Dynamic serving
-Has an option to use Firebase Cloud Functions to dynamically serve polyfilled HTML. Currently anything below the broser versions below, will add `res/common/polyfill.js`. Need to swith the `settings.json`'s `hostingOnly` property to `false` and use `firebase_prod.json` to deploy to enabable dynamic serving. There could be a better way to work this out though.
+Has an option to use Firebase Cloud Functions to dynamically serve polyfilled HTML. Currently anything below the broser versions below, will add `res/common/polyfill.js`. Need to swith the `settings.json`'s `hostingOnly` property to `false` and use `firebase_prod.json` to deploy to enabable dynamic serving. There could be a better way to work this out though and depends on the API being used.
 
 ```
 const modern = {
-      chrome: 45,
-      firefox: 32,
-      safari: 9,
-      mobile_safari: 9,
-      edge: 12,
-    };
+        chrome: 45,
+        firefox: 32,
+        safari: 9,
+        mobile_safari: 9,
+        edge: 12,
+      };
 ```
 
 ## Licence
@@ -69,4 +71,5 @@ Codes are Apache 2.0 and the creatives are from [unsplash.com](https://unsplash.
 - [Freeman Zhou](https://unsplash.com/@freeman_zhou)
 - [Matteo Catanese](https://unsplash.com/@matteocatanese)
 - [Andre Benz](https://unsplash.com/@trapnation)
+
 All your photos are amazing!
