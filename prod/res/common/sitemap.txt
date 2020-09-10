@@ -1,0 +1,7 @@
+https://simple-sitegen.web.app/
+https://simple-sitegen.web.app/article/sample-1
+https://simple-sitegen.web.app/article/sample-2
+https://simple-sitegen.web.app/article/sample-3
+https://simple-sitegen.web.app/article/about
+https://simple-sitegen.web.app/article
+https://simple-sitegen.web.app/staff

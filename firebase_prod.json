@@ -1,0 +1,16 @@
+{
+  "hosting": {
+    "public": "prod",
+    "ignore": [
+      "firebase.json",
+      "**/.*",
+      "**/node_modules/**"
+    ],
+    "rewrites": [ 
+      {"source": "/", "function": "proxy"},
+      {"source": "/article/*", "function": "proxy"},
+      {"source": "/staff", "function": "proxy"}
+    ],
+    "cleanUrls": true
+  }
+}

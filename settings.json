@@ -1,0 +1,42 @@
+{
+  "transpile": true,
+  "minify": true,
+  "siteName": "Sample Sitegen",
+  "siteOrigin": "https://simple-sitegen.web.app",
+  "startUrl": "/?launch=homescreen",
+  "locale": "en",
+  "route": {
+    "/": {"title": "Top Page", "description": "Lorem Ipsum is simply dummy text of the printing and typesetting industry."},
+    "/article/sample-1": {"title": "Article 1", "description": "Lorem Ipsum is simply dummy text of the printing and typesetting industry."},
+    "/article/sample-2": {"title": "Article 2", "description": "Lorem Ipsum is simply dummy text of the printing and typesetting industry."},
+    "/article/sample-3": {"title": "Article 3", "description": "Lorem Ipsum is simply dummy text of the printing and typesetting industry."},
+    "/article/about": {"title": "About", "description": "Lorem Ipsum is simply dummy text of the printing and typesetting industry."},
+    "/article": {"title": "Articles", "description": "Lorem Ipsum is simply dummy text of the printing and typesetting industry."},
+    "/staff": {"title": "Staff", "description": "Lorem Ipsum is simply dummy text of the printing and typesetting industry."}
+  },
+  "nopolyfill": [
+    {
+      "/staff": true
+    }
+  ],
+  "siteMapPath": "/res/common/sitemap.txt",
+  "ogpDirectory": "/res/page/ogp",
+  "manifestDirectory": "/res/common",
+  "img": {
+    "optimize": [
+      {
+        "target": "./res/page/img/news/raw/",
+        "dist": "./res/page/img/news/"
+      },
+      {
+        "target": "./res/page/img/article/raw/",
+        "dist": "./res/page/img/article/"
+      },
+      {
+        "target": "./res/page/img/raw/",
+        "dist": "./res/page/img/"
+      } 
+    ]
+  },
+  "hostingOnly": true
+}

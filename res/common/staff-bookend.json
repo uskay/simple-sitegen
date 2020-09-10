@@ -1,0 +1,51 @@
+{
+    "bookendVersion": "v1.0",
+    "shareProviders": [
+      "facebook",
+      "twitter",
+      "email"
+    ],
+    "components": [
+      {
+        "type": "heading",
+        "text": "Lean more"
+      },
+      {
+        "type": "landscape",
+        "title": "Sample 1",
+        "url": "/article/sample-1",
+        "image": "/res/page/img/sample-1-500w.jpg",
+        "category": "Article"
+      },
+      {
+        "type": "landscape",
+        "title": "Sample 2",
+        "url": "/article/sample-2",
+        "image": "/res/page/img/sample-2-500w.jpg",
+        "category": "Article"
+      },
+      {
+        "type": "landscape",
+        "title": "Sample 3",
+        "url": "/article/sample-3",
+        "image": "/res/page/img/sample-3-500w.jpg",
+        "category": "Article"
+      },
+      {
+        "type": "landscape",
+        "title": "About",
+        "url": "/article/about",
+        "image": "/res/page/img/about-500w.jpg",
+        "category": "Article"
+      },
+      {
+        "type": "cta-link",
+        "links": [
+          {
+            "text": "Back to home",
+            "url": "/"
+          }
+        ]
+      }
+    ]
+  }

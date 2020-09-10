@@ -1,0 +1,554 @@
+{
+  "SimpleHeroSection": {
+    "/": {
+      "slide": [
+        {
+          "src": "/res/page/img/slide_1-500w.jpg",
+          "srcset": "/res/page/img/slide_1-500w.jpg 500w, /res/page/img/slide_1-1000w.jpg 1000w",
+          "width": "1000",
+          "height": "667"
+        },
+        {
+          "src": "/res/page/img/slide_2-500w.jpg",
+          "srcset": "/res/page/img/slide_2-500w.jpg 500w, /res/page/img/slide_2-1000w.jpg 1000w",
+          "width": "1000",
+          "height": "667"
+        },
+        {
+          "src": "/res/page/img/slide_3-500w.jpg",
+          "srcset": "/res/page/img/slide_3-500w.jpg 500w, /res/page/img/slide_3-1000w.jpg 1000w",
+          "width": "1000",
+          "height": "667"
+        }
+      ],
+      "duration": 7,
+      "title": {
+        "type": "img",
+        "src": "/res/common/img/logo.svg",
+        "width": "298",
+        "height": "150"
+      }
+    },
+    "/article": {
+      "slide": [
+        {
+          "src": "/res/page/img/sample-3-500w.jpg",
+          "srcset": "/res/page/img/sample-3-500w.jpg 500w, /res/page/img/sample-3-1000w.jpg 1000w",
+          "width": "500",
+          "height": "334"
+        }
+      ],
+      "title": {
+        "type": "text",
+        "title": "Article",
+        "subtitle": "Lorem Ipsum is simply dummy text of the printing and typesetting industry."
+      }
+    },
+    "/article/sample-1": {
+      "slide": [
+        {
+          "src": "/res/page/img/sample-1-500w.jpg",
+          "srcset": "/res/page/img/sample-1-500w.jpg 500w, /res/page/img/sample-1-1000w.jpg 1000w",
+          "width": "500",
+          "height": "334"
+        }
+      ],
+      "title": {
+        "type": "text",
+        "title": "Sample article 1",
+        "subtitle": "Lorem Ipsum is simply dummy text"
+      }
+    },
+    "/article/sample-2": {
+      "slide": [
+        {
+          "src": "/res/page/img/sample-2-500w.jpg",
+          "srcset": "/res/page/img/sample-2-500w.jpg 500w, /res/page/img/sample-2-1000w.jpg 1000w",
+          "width": "500",
+          "height": "334"
+        }
+      ],
+      "title": {
+        "type": "text",
+        "title": "Sample article 2",
+        "subtitle": "Lorem Ipsum is simply dummy text"
+      }
+    },
+    "/article/sample-3": {
+      "slide": [
+        {
+          "src": "/res/page/img/sample-3-500w.jpg",
+          "srcset": "/res/page/img/sample-3-500w.jpg 500w, /res/page/img/sample-3-1000w.jpg 1000w",
+          "width": "500",
+          "height": "563"
+        }
+      ],
+      "title": {
+        "type": "text",
+        "title": "Sample article 3",
+        "subtitle": "Lorem Ipsum is simply dummy text"
+      }
+    },
+    "/article/about": {
+      "slide": [
+        {
+          "src": "/res/page/img/about-500w.jpg",
+          "srcset": "/res/page/img/about-500w.jpg 500w, /res/page/img/about-1000w.jpg 1000w",
+          "width": "500",
+          "height": "334"
+        }
+      ],
+      "title": {
+        "type": "text",
+        "title": "About",
+        "subtitle": "Lorem Ipsum is simply dummy text"
+      }
+    }
+  },
+  "SimpleWelcomeSection": {
+    "title": "Hi 👋",
+    "icon": {
+      "src": "/res/page/img/section_1-300w.jpg",
+      "width": "300",
+      "height": "300"
+    },
+    "meta": "caption xyz",
+    "description": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. ",
+    "subtitle": "Media",
+    "media": {
+      "items": [
+        {
+          "img": {
+            "src": "/res/page/img/sample_media_1-300w.jpg",
+            "width": "700",
+            "height": "350"
+          },
+          "description": "Hands on Trusted Web Activity",
+          "meta": "blog.uskay.io",
+          "href": "https://blog.uskay.io/article/004-trusted-web-activity"
+        },
+        {
+          "img": {
+            "src": "/res/page/img/sample_media_2-300w.jpg",
+            "width": "700",
+            "height": "350"
+          },
+          "description": "Notes on career and hiring",
+          "meta": "blog.uskay.io",
+          "href": "https://blog.uskay.io/article/003-career-and-hiring"
+        }
+      ]
+    }
+  },
+  "SimpleArticleSection": {
+    "title": "Article",
+    "articles": [
+      {
+        "img": {
+          "src": "/res/page/img/sample-1-500w.jpg",
+          "srcset": "/res/page/img/sample-1-500w.jpg 500w, /res/page/img/sample-1-1000w.jpg 1000w",
+          "width": "5125",
+          "height": "3417"
+        },
+        "title": "Sample article 1",
+        "description": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and...",
+        "meta": "Read more",
+        "href": "/article/sample-1"
+      },
+      {
+        "img": {
+          "src": "/res/page/img/sample-2-500w.jpg",
+          "srcset": "/res/page/img/sample-2-500w.jpg 500w, /res/page/img/sample-2-1000w.jpg 1000w",
+          "width": "5557",
+          "height": "3710"
+        },
+        "title": "Sample article 2",
+        "description": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and...",
+        "meta": "Read more",
+        "href": "/article/sample-2"
+      },
+      {
+        "img": {
+          "src": "/res/page/img/sample-3-500w.jpg",
+          "srcset": "/res/page/img/sample-3-500w.jpg 500w, /res/page/img/sample-3-1000w.jpg 1000w",
+          "width": "3913",
+          "height": "2537"
+        },
+        "title": "Sample article 3",
+        "description": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and...",
+        "meta": "Read more",
+        "href": "/article/sample-3"
+      }
+    ]
+  },
+  "SimpleStaffSection": {
+    "title": "Staff",
+    "staff": [
+      {
+        "img": {
+          "src": "/res/page/img/section_1-300w.jpg",
+          "width": "200",
+          "height": "200"
+        },
+        "name": "uskay",
+        "href": "/staff#page=uskay"
+      },
+      {
+        "img": {
+          "src": "/res/page/img/section_1-300w.jpg",
+          "width": "200",
+          "height": "200"
+        },
+        "name": "uskay",
+        "href": "/staff#page=uskay"
+      },
+      {
+        "img": {
+          "src": "/res/page/img/section_1-300w.jpg",
+          "width": "200",
+          "height": "200"
+        },
+        "name": "uskay",
+        "href": "/staff#page=uskay"
+      },
+      {
+        "img": {
+          "src": "/res/page/img/section_1-300w.jpg",
+          "width": "200",
+          "height": "200"
+        },
+        "name": "uskay",
+        "href": "/staff#page=uskay"
+      },
+      {
+        "img": {
+          "src": "/res/page/img/section_1-300w.jpg",
+          "width": "200",
+          "height": "200"
+        },
+        "name": "uskay",
+        "href": "/staff#page=uskay"
+      },
+      {
+        "img": {
+          "src": "/res/page/img/section_1-300w.jpg",
+          "width": "200",
+          "height": "200"
+        },
+        "name": "uskay",
+        "href": "/staff#page=uskay"
+      }
+    ]
+  },
+  "SimpleFooterSection": {
+    "title": "News",
+    "tel": "080-9999-9999",
+    "name": "Simple Sitegen",
+    "address": "Tokyo, Japan",
+    "signature": "code: Apache 2.0 | creative: unsplash.com",
+    "ghlink": "/",
+    "carousel": {
+      "items": [
+        {
+          "img": {
+            "src": "/res/common/img/placeholder.svg",
+            "width": "1",
+            "height": "1"
+          },
+          "description": "Lorem Ipsum is simply dummy text of the printing and typesetting industry.",
+          "meta": "Jan 1, 2020",
+          "href": "https://blog.uskay.io/"
+        },
+        {
+          "img": {
+            "src": "/res/common/img/placeholder.svg",
+            "width": "1",
+            "height": "1"
+          },
+          "description": "Lorem Ipsum is simply dummy text of the printing and typesetting industry.",
+          "meta": "Jan 2, 2020",
+          "href": "https://blog.uskay.io/"
+        },
+        {
+          "img": {
+            "src": "/res/common/img/placeholder.svg",
+            "width": "1",
+            "height": "1"
+          },
+          "description": "Lorem Ipsum is simply dummy text of the printing and typesetting industry.",
+          "meta": "Jan 3, 2020",
+          "href": "https://blog.uskay.io/"
+        },
+        {
+          "img": {
+            "src": "/res/common/img/placeholder.svg",
+            "width": "1",
+            "height": "1"
+          },
+          "description": "Lorem Ipsum is simply dummy text of the printing and typesetting industry.",
+          "meta": "Jan 4, 2020",
+          "href": "https://blog.uskay.io/"
+        }
+      ]
+    }
+  },
+  "SimpleFooterSectionForArticle": {
+    "title": "Related articles",
+    "tel": "080-9999-9999",
+    "name": "Simple Sitegen",
+    "address": "Tokyo, Japan",
+    "signature": "Simple Sitegen Project",
+    "ghlink": "/",
+    "carousel": {
+      "items": [
+        {
+          "img": {
+            "src": "/res/page/img/sample-1-500w.jpg",
+            "srcset": "/res/page/img/sample-1-500w.jpg 500w, /res/page/img/sample-1-1000w.jpg 1000w",
+            "width": "500",
+            "height": "334"
+          },
+          "title": "Sample article 1",
+          "description": "Lorem Ipsum is simply dummy text of the printing and typesetting industry.",
+          "meta": "Read more",
+          "href": "/article/sample-1"
+        },
+        {
+          "img": {
+            "src": "/res/page/img/sample-2-500w.jpg",
+            "srcset": "/res/page/img/sample-2-500w.jpg 500w, /res/page/img/sample-2-1000w.jpg 1000w",
+            "width": "500",
+            "height": "334"
+          },
+          "title": "Sample article 2",
+          "description": "Lorem Ipsum is simply dummy text of the printing and typesetting industry.",
+          "meta": "Read more",
+          "href": "/article/sample-2"
+        },
+        {
+          "img": {
+            "src": "/res/page/img/sample-3-500w.jpg",
+            "srcset": "/res/page/img/sample-3-500w.jpg 500w, /res/page/img/sample-3-1000w.jpg 1000w",
+            "width": "500",
+            "height": "334"
+          },
+          "title": "Sample article 3",
+          "description": "Lorem Ipsum is simply dummy text of the printing and typesetting industry.",
+          "meta": "Read more",
+          "href": "/article/sample-3"
+        },
+        {
+          "img": {
+            "src": "/res/page/img/about-500w.jpg",
+            "srcset": "/res/page/img/about-500w.jpg 500w, /res/page/img/about-1000w.jpg 1000w",
+            "width": "500",
+            "height": "334"
+          },
+          "title": "About",
+          "description": "Lorem Ipsum is simply dummy text of the printing and typesetting industry.",
+          "meta": "Read more",
+          "href": "/article/about"
+        }
+      ]
+    }
+  },
+  "SimpleHeaderSection": {
+    "link": {
+      "top": {
+        "text": "Top",
+        "textMobile": "Top",
+        "hideOnMobile": true,
+        "href": "/"
+      },
+      "about": {
+        "text": "About",
+        "textMobile": "About",
+        "hideOnMobile": false,
+        "href": "/article/about"
+      },
+      "media": {
+        "text": "Media",
+        "textMobile": "Media",
+        "hideOnMobile": false,
+        "href": "/#media"
+      },
+      "article": {
+        "text": "Article",
+        "textMobile": "Article",
+        "hideOnMobile": false,
+        "href": "/#article"
+      },
+      "staff": {
+        "text": "Staff",
+        "textMobile": "Staff",
+        "hideOnMobile": false,
+        "href": "/#staff"
+      },
+      "news": {
+        "text": "News",
+        "textMobile": "News",
+        "hideOnMobile": true,
+        "href": "/#news"
+      }
+    }
+  },
+  "SimpleArticleListSection": {
+    "carousel": {
+      "items": [
+        {
+          "img": {
+            "src": "/res/page/img/sample-1-500w.jpg",
+            "srcset": "/res/page/img/sample-1-500w.jpg 500w, /res/page/img/sample-1-1000w.jpg 1000w",
+            "width": "500",
+            "height": "334"
+          },
+          "title": "Sample article 1",
+          "description": "Lorem Ipsum is simply dummy text of the printing and typesetting industry.",
+          "meta": "Read more",
+          "href": "/article/sample-1"
+        },
+        {
+          "img": {
+            "src": "/res/page/img/sample-2-500w.jpg",
+            "srcset": "/res/page/img/sample-2-500w.jpg 500w, /res/page/img/sample-2-1000w.jpg 1000w",
+            "width": "500",
+            "height": "334"
+          },
+          "title": "Sample article 2",
+          "description": "Lorem Ipsum is simply dummy text of the printing and typesetting industry.",
+          "meta": "Read more",
+          "href": "/article/sample-2"
+        },
+        {
+          "img": {
+            "src": "/res/page/img/sample-3-500w.jpg",
+            "srcset": "/res/page/img/sample-3-500w.jpg 500w, /res/page/img/sample-3-1000w.jpg 1000w",
+            "width": "500",
+            "height": "334"
+          },
+          "title": "Sample article 3",
+          "description": "Lorem Ipsum is simply dummy text of the printing and typesetting industry.",
+          "meta": "Read more",
+          "href": "/article/sample-3"
+        }
+      ]
+    },
+    "articles": [
+      {
+        "img": {
+          "src": "/res/page/img/sample-1-500w.jpg",
+          "srcset": "/res/page/img/sample-1-500w.jpg 500w, /res/page/img/sample-1-1000w.jpg 1000w",
+          "width": "500",
+          "height": "334"
+        },
+        "title": "Sample article 1",
+        "description": "Lorem Ipsum is simply dummy text of the printing and typesetting industry.",
+        "meta": "Read more",
+        "href": "/article/sample-1"
+      },
+      {
+        "img": {
+          "src": "/res/page/img/sample-2-500w.jpg",
+          "srcset": "/res/page/img/sample-2-500w.jpg 500w, /res/page/img/sample-2-1000w.jpg 1000w",
+          "width": "500",
+          "height": "334"
+        },
+        "title": "Sample article 2",
+        "description": "Lorem Ipsum is simply dummy text of the printing and typesetting industry.",
+        "meta": "Read more",
+        "href": "/article/sample-2"
+      },
+      {
+        "img": {
+          "src": "/res/page/img/sample-3-500w.jpg",
+          "srcset": "/res/page/img/sample-3-500w.jpg 500w, /res/page/img/sample-3-1000w.jpg 1000w",
+          "width": "500",
+          "height": "563"
+        },
+        "title": "Sample article 3",
+        "description": "Lorem Ipsum is simply dummy text of the printing and typesetting industry.",
+        "meta": "Read more",
+        "href": "/article/sample-3"
+      }
+    ]
+  },
+  "SimpleSidebar": {
+    "link": {
+      "top": {
+        "text": "Top",
+        "href": "/"
+      },
+      "about": {
+        "text": "About",
+        "href": "/article/about"
+      },
+      "media": {
+        "text": "Media",
+        "href": "/#media"
+      },
+      "article": {
+        "text": "Article",
+        "href": "/#article"
+      },
+      "staff": {
+        "text": "Staff",
+        "href": "/#staff"
+      },
+      "news": {
+        "text": "News",
+        "href": "/#news"
+      }
+    },
+    "topBanner": {
+      "a2hs": {
+        "title": "📱 Add to homescreen",
+        "description": "Simply add the site to your homescreen!",
+        "cta": "Add"
+      },
+      "general": {
+        "title": "General banner",
+        "description": "Lorem Ipsum is simply dummy text of the printing and typesetting industry.",
+        "cta": "Read more",
+        "href": "/"
+      }
+    }
+  },
+  "SimpleBannerApplication": {
+    "isOn": true,
+    "title": "Banner 2: Pinned information",
+    "description": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s.",
+    "button": "Read more",
+    "href": "/",
+    "backgroundColor": "#364953",
+    "fontColor": "white"
+  },
+  "SimpleBannerHotTopics": {
+    "isOn": true,
+    "title": "Banner 1: Hot topics",
+    "description": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s.",
+    "button": "Read more",
+    "href": "/",
+    "backgroundColor": "#efefef",
+    "fontColor": "#253239"
+  },
+  "SimpleSocialShare": {
+    "twitter": {
+      "urlTemplate": "https://twitter.com/intent/tweet?text=@@@__text__@@@&url=@@@__location__@@@",
+      "textPlaceholder": "@@@__text__@@@",
+      "urlPlaceholder": "@@@__location__@@@",
+      "img": "/res/common/img/tw.png",
+      "backgroundColor": "#1DA1F2"
+    },
+    "facebook": {
+      "urlTemplate": "https://www.facebook.com/sharer/sharer.php?display=popup&u=@@@__location__@@@&t=@@@__text__@@@",
+      "textPlaceholder": "@@@__text__@@@",
+      "urlPlaceholder": "@@@__location__@@@",
+      "img": "/res/common/img/fb.png",
+      "backgroundColor": "#395A9A"
+    },
+    "webshare": {
+      "img": "/res/common/img/webshare.png",
+      "backgroundColor": "#364953"
+    }
+  }
+}

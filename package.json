@@ -1,0 +1,36 @@
+{
+  "name": "uskay-simple-site-gen",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "dependencies": {
+    "@babel/polyfill": "^7.10.4",
+    "htm": "^3.0.4",
+    "preact": "^10.4.6",
+    "preact-render-to-string": "^5.1.10",
+    "shorthash": "0.0.2",
+    "imagemin": "^7.0.1",
+    "imagemin-mozjpeg": "^9.0.0",
+    "imagemin-pngquant": "^9.0.0",
+    "ncp": "^2.0.0",
+    "sharp": "^0.26.0",
+    "uglify-js": "^3.10.2",
+    "@babel/core": "^7.11.4",
+    "@babel/preset-env": "^7.11.0"
+  },
+  "devDependencies": {
+    "eslint": "^7.7.0",
+    "eslint-config-google": "^0.14.0",
+    "http-server": "^0.12.3"
+  },
+  "scripts": {
+    "build": "node ./build/build.js && npx http-server ./debug",
+    "deploy-host": "firebase deploy --only hosting",
+    "deploy-prod": "firebase deploy"
+  },
+  "author": "Yusuke Utsunomiya",
+  "engines": {
+    "node": "10"
+  },
+  "license": "Apache 2.0"
+}
