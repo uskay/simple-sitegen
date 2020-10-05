@@ -10,7 +10,7 @@ const GenerateStaticAssets = require('./task/GenerateStaticAssets.js');
 const PrepareDebugEnv = require('./task/PrepareDebugEnv.js');
 
 module.exports = class TaskRunner extends Task {
-  run() {
+  async run() {
     this.log('======================');
     this.log('       GEN SITE       ');
     this.log('======================');
@@ -23,7 +23,7 @@ module.exports = class TaskRunner extends Task {
     this.add(new GenerateOGPImage());
     this.add(new GenerateStaticAssets());
     this.add(new PrepareDebugEnv());
-    this.runAll();
+    await this.runAll();
     this.log('======================');
     this.log(' ');
   }

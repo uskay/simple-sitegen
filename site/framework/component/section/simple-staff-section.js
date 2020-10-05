@@ -60,6 +60,11 @@ module.exports = class SimpleStaffSection extends SimpleUI {
         text-decoration: none;
         color: inherit;
       }
+      :host .description {
+        text-align: center;
+        margin: 50px auto -10px auto;
+        width: 90%;
+      }
       @media only screen and (max-width: 800px) {
         :host .container {
           grid-column-gap: 10px;
@@ -104,6 +109,7 @@ module.exports = class SimpleStaffSection extends SimpleUI {
         <div class="title">
           <h2 class="light"><span>${this.feed.title}</span></h2>
         </div>
+        <div class="description">${this.feed.description}</div>
         <div class="container">
           ${this.feed.staff.map((item, index) => {
             return createIcon(item, index);

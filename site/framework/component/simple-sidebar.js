@@ -178,6 +178,7 @@ module.exports = class SimpleSidebar extends SimpleUI {
         });
       });
       let deferredPrompt = '';
+      let hasAccepted = false;
       const showA2HSBanner = shouldShow => {
         document.querySelector('.topBannerGeneral')
           .style.display = shouldShow ? 'none' : 'block';
@@ -185,6 +186,9 @@ module.exports = class SimpleSidebar extends SimpleUI {
           .style.display = shouldShow ? 'block' : 'none';
       };
       window.addEventListener('beforeinstallprompt', evt => {
+        if (hasAccepted) {
+          return;
+        }
         evt.preventDefault();
         deferredPrompt = evt;
         showA2HSBanner(true);
@@ -194,6 +198,11 @@ module.exports = class SimpleSidebar extends SimpleUI {
         evt.preventDefault();
         showA2HSBanner(false);
         deferredPrompt.prompt();
+        deferredPrompt.userChoice.then((choiceResult) => {
+          if (choiceResult.outcome === 'accepted') {
+            hasAccepted = true;
+          }
+        });
       })
     `;
   }

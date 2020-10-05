@@ -59,6 +59,11 @@ module.exports = class SimpleBanner extends SimpleUI {
     if (!this.feed.isOn) {
       return '';
     }
+    for (const excludeRoute of this.feed.exclude) {
+      if (excludeRoute === props.route) {
+        return '';
+      }
+    }
     return html`
       <a href="${this.feed.href}">
         <div class="banner-title">${this.feed.title}</div>

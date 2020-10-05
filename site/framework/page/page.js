@@ -49,7 +49,7 @@ module.exports = class Page {
     const matchResult =
       metaData.match(/<structured-data\s+content="(.+)"><\/structured-data>/);
     if (!matchResult || !matchResult[1]) {
-      return metaData;
+      return metaData.replace(/<structured-data.+><\/structured-data>/, '');
     }
     const jsonLd = matchResult[1].replace(/&quot;/g, '"');
     return metaData.replace(

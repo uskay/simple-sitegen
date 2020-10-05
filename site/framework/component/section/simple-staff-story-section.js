@@ -13,7 +13,7 @@ module.exports = class SimpleStaffStorySection extends SimpleUI {
     let autoAdvanceAfter = `${props.id}_video`;
     let media = html`
         <amp-video id="${props.id}_video" noaudio width="1"  height="1" 
-            layout="responsive" loop autoplay 
+            layout="responsive" loop autoplay crossOrigin="anonymous"
             poster="/res/page/img/stories_${props.id}_poster-500w.jpg">
             <source src="/res/page/video/stories_${props.id}-large.mp4" 
                     type="video/mp4" 

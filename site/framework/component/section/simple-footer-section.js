@@ -82,29 +82,38 @@ module.exports = class SimpleFooterSection extends SimpleUI {
         text-decoration: none;
         color: inherit;
       }
+      :host .signature a {
+        text-decoration: underline;
+      }
     `;
   }
 
   template(props) {
+    const feed = this.feed;
     return html`
       <div class="section" id="news">
         <div class="title">
-          <h2 class="dark"><span>${this.feed.title}</span></h2>
+          <h2 class="dark"><span>${feed.title}</span></h2>
         </div>
         <div>
           <${SimpleCarousel} 
-            content="${JSON.stringify(this.feed.carousel)}"
+            content="${JSON.stringify(feed.carousel)}"
             route="${props.route}"
           />
         </div>
         <div>
-          <div class="tel"><a href="tel:${this.feed.tel}">
-            📞 ${this.feed.tel}
+          <div class="tel"><a href="tel:${feed.tel}">
+            📞 ${feed.tel}
           </a></div>
-          <div class="name">${this.feed.name}</div>
-          <div class="address">${this.feed.address}</div>
+          <div class="name">${feed.name}</div>
+          <div class="address">${feed.address}</div>
           <div class="signature">
-            ${this.feed.signature} | <a href="${this.feed.ghlink}">GitHub</a>
+            ${feed.signature}
+            <div>
+              <a href="${feed.ghlink}" target="_blank" rel="noopener">
+                ${this.feed.ghTitle}
+              </a>
+            </div>
           </div>
         </div>
       </div>

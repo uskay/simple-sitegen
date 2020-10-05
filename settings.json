@@ -25,10 +25,6 @@
   "img": {
     "optimize": [
       {
-        "target": "./res/page/img/news/raw/",
-        "dist": "./res/page/img/news/"
-      },
-      {
         "target": "./res/page/img/article/raw/",
         "dist": "./res/page/img/article/"
       },
@@ -38,5 +34,28 @@
       } 
     ]
   },
-  "hostingOnly": true
+  "hostingOnly": true,
+  "injectable": {
+    "afterHead": [
+      {
+        "name": "analytics",
+        "exclude": [
+          "/staff"
+        ]
+      }
+    ],
+    "beforeHeadClose": [],
+    "afterBody": [],
+    "beforeBodyClose": [],
+    "custom": [
+      {
+        "name": "analyticsForStories",
+        "include": [
+          "/staff"
+        ],
+        "tag": "<amp-story-bookend",
+        "beforeOrAfter": "before"
+      }
+    ]
+  }
 }

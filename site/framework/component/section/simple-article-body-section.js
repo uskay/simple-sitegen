@@ -67,8 +67,8 @@ module.exports = class SimpleArticleBodySection extends SimpleUI {
             <dangerouslysetinnerhtml>${markUp}</dangerouslysetinnerhtml>
           </div>
           <${SimpleSocialShare} />
-          <${SimpleBannerHotTopics} />
-          ${pageId === 'about' ? '' : html`<${SimpleBannerApplication} />`}
+          <${SimpleBannerHotTopics} route="/article/${pageId}"/>
+          <${SimpleBannerApplication} route="/article/${pageId}"/>
         </div>`;
     } catch (err) {
       console.error(err);

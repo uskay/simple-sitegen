@@ -14,6 +14,9 @@ module.exports = class SimpleTable extends SimpleUI {
     rows.map((row) => {
       const columns = row.split('|');
       columnCount = columns.length;
+      if (rows.length === 1) {
+        columnCount--;
+      }
       columns.map((column) => {
         const value = column.trim();
         if (value) {

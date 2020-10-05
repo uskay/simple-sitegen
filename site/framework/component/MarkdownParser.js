@@ -13,13 +13,17 @@ module.exports = class MarkdownParser {
     this.md = md.replace(/</g, '&lt;').replace(/>/g, '&gt;');
     this.previouseRow;
     this.Row = class Row {
-      constructor(row, isOl, isUl, isBlock) {
+      constructor(row, isOl, isUl, isBlock, tableContent) {
         this.row = row;
         this.isOl = isOl === undefined ? false : isOl;
         this.isUl = isUl === undefined ? false : isUl;
         this.isBlock = isBlock;
+        this.tableContent = tableContent === undefined ? false : tableContent;
       }
       getInnerHTML() {
+        if (this.tableContent) {
+          return '';
+        }
         if (this.isOl === true || this.isUl === true || this.isBlock === true) {
           return this.row;
         }
@@ -27,7 +31,7 @@ module.exports = class MarkdownParser {
       }
       createNewRow(regex, replace) {
         return new Row(this.row.replace(regex, replace),
-          this.isOl, this.isUl, this.isBlock);
+          this.isOl, this.isUl, this.isBlock, this.tableContent);
       }
 
       // Block elements
@@ -116,17 +120,6 @@ module.exports = class MarkdownParser {
         return this;
       }
 
-      parseTable() {
-        const regex = /^\|\s.+\|$/;
-        const result = this.row.match(regex);
-        let replaceTable = '';
-        if (result) {
-          replaceTable = render(html`<${SimpleTable} data=${result[0]} />`);
-          return this.createNewRow(regex, replaceTable);
-        }
-        return this;
-      }
-
       // inline elements
       parseStrong() {
         return this.createNewRow(/\*\*(.+?)\*\*/g, `<b>$1</b>`);
@@ -166,11 +159,33 @@ module.exports = class MarkdownParser {
         } else {
           if (this.isOl === true) {
             this.isOl = false;
-            return this.createNewRow(/^/, `</ul>`);
+            return this.createNewRow(/^/, `</ol>`);
           } else if (this.isUl === true) {
             this.isUl = false;
             return this.createNewRow(/^/, `</ul>`);
           } else return this;
+        }
+      }
+
+      // Table
+      parseTable() {
+        const regex = /^\|\s.+\|$/;
+        const result = this.row.match(regex);
+        if (result) {
+          if (!this.tableContent) {
+            this.tableContent = '';
+          }
+          this.tableContent = `${this.tableContent}${result[0].trim()}`;
+          return this;
+        } else {
+          const content = this.tableContent;
+          this.tableContent = '';
+          if (content) {
+            const replaceTable =
+              render(html`<${SimpleTable} data=${content} />`);
+            return this.createNewRow(/^/, replaceTable);
+          }
+          return this;
         }
       }
     };
@@ -191,12 +206,14 @@ module.exports = class MarkdownParser {
   createRow(row) {
     let isOl = false;
     let isUl = false;
+    let tableContent = '';
     const isBlock = false;
     if (this.previouseRow) {
       isOl = this.previouseRow.isOl;
       isUl = this.previouseRow.isUl;
+      tableContent = this.previouseRow.tableContent;
     }
-    return new this.Row(row, isOl, isUl, isBlock)
+    return new this.Row(row, isOl, isUl, isBlock, tableContent)
       /** Try block elements first **/
       .parseH1()
       .parseH2()
@@ -204,7 +221,6 @@ module.exports = class MarkdownParser {
       .parseHR()
       .parseBlockQuote()
       .parseImg()
-      .parseTable()
       .parseMap()
       /** Try inline elements next **/
       .parseStrong()
@@ -213,6 +229,7 @@ module.exports = class MarkdownParser {
       .parseCode()
       .parseLineThrough()
       /** Lastly, parse Ol Ul lists **/
-      .parseList();
+      .parseList()
+      .parseTable();
   }
 };

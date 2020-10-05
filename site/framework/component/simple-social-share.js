@@ -74,8 +74,15 @@ module.exports = class SimpleSocialShare extends SimpleUI {
     script(prop) {
         return /* javascript*/`
           const title = document.title;
-          const description =
+          let description =
             document.getElementsByName('description')[0].content;
+          const siteName =
+            document.querySelector('#meta-site-name')
+            .getAttribute('content');
+          if (description.length > 50) {
+            description = description.substring(0, 50) + '...';
+          }
+          description = description + ' | ' + siteName;
           Array.from(document.querySelectorAll('.share-button')).map(elm => {
             if (navigator.share) {
                 if (elm.classList.contains('share-webshare')) {
